@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <title>Subscription Preference Center</title>
+
+</head>
+<body>
+    <section>
+        <p><a href="http://localhost:63342/Iterable%20Subscriptions/index.html?_ijt=8l77g6d4i31r3ag1l18da2qnav?email=dgewirtzman%40playbill.com&sig=fdd66f8606c9b77d4ef5323405021a4fdfbcd273">Test Link</a> </p>
+        <p id="errorMessage"></p>
+        <form>
+
+            <span>List of subscriptions:</span>
+
+            <div>
+                <input type="checkbox" id="club" name="clubSubscribe"
+                       value="club" />
+                <label for="club">Club</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="playbillPost" name="playbillPostSubscribe"
+                       value="playbillPost" />
+                <label for="playbillPost">Playbill Post</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="classicArts" name="classicArtsSubscribe"
+                       value="classicArts" />
+                <label for="classicArts">Classic Arts</label>
+            </div>
+
+            <button type='submit'>Update Subscriptions</button>
+
+        </form>
+    </section>
+
+    <!--Iterable JS Call-->
+    <script>
+    (function () {
+        var b = document.createElement('script'); b.type = 'text/javascript'; b.async = true;
+        b.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'js.iterable.com/analytics.js';
+        var a = document.getElementsByTagName('script')[0]; a.parentNode.insertBefore(b, a);
+    })();
+    </script>
+
+
+    <!--IterableUtils JS Library-->
+    <script type="text/javascript" src="https://js.iterable.com/iterableUtils.js">
+    </script>
+
+    <!--My JS File-->
+    <script src="./index.js" type="text/javascript"></script>
+
+    <!--Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--SHA-1 Encoding-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/2.3.1/sha1.js"></script>
+</body>
+</html>
